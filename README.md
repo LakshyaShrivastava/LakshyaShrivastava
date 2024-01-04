@@ -1,9 +1,11 @@
 ### Hi I'm Lakshya 👋
 
 I am a 2nd-year Computer Science 🖥 student at the University Of California at Irvine🏫.
-I am currently learning Computer Organization and MIPS assembly. 
+I am currently learning web development and JavaScript 
 
-Contact me on [LinkedIn](www.linkedin.com/in/lakshya-shrivastava0803)
+Contact me on [LinkedIn](www.linkedin.com/in/lakshya-shrivastava0803).
+
+Check out the [website](https://lakshyashrivastava.github.io/LakshyaShrivastava/) I am working on!
 
 <!--
 **LakshyaShrivastava/LakshyaShrivastava** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
