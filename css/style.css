@@ -11,19 +11,6 @@ h1 {
 p { /* Select by element tag */
     font-family: 'sans-serif';
 }
-.emphasize { /* Select by element class */
-    font-family: 'Arial';
-    color: red;
-}
-
-#redtext { /* Select by element id */
-    font-family: 'Arial';
-    color: red;
-}
-
-img[src] { /* Select img with src attribute */
-    width: 500px;
-}
 a {
     color: black;
 }
