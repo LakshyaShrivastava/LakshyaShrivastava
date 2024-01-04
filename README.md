@@ -1,9 +1,7 @@
-### Hi there 👋
+### Hi I'm Lakshya 👋
 
-2nd Year Computer Science student at the University Of California at Irvine.*
-
-🌱 Currently learning Computer Organization and MIPS assembly.
-
+I am 2nd Year Computer Science 🖥 student at the University Of California at Irvine🏫.
+I am currently learning Computer Organization and MIPS assembly. 
 
 
 <!--
