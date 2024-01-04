@@ -1,5 +1,11 @@
 ### Hi there 👋
 
+2nd Year Computer Science student at the University Of California at Irvine.*
+
+🌱 Currently learning Computer Organization and MIPS assembly.
+
+
+
 <!--
 **LakshyaShrivastava/LakshyaShrivastava** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
