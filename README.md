@@ -5,8 +5,6 @@ I am currently learning systems programming, computer graphics and AI.
 
 Contact me on [LinkedIn](www.linkedin.com/in/lakshya-shrivastava0803).
 
-Check out the [website](https://lakshyashrivastava.github.io/LakshyaShrivastava/) I am working on!
-
 <!--
 **LakshyaShrivastava/LakshyaShrivastava** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
