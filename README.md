@@ -1,6 +1,6 @@
 ### Hi I'm Lakshya 👋
 
-I am a 3rd-year Computer Science 🖥 student at the University Of California at Irvine🏫.
+I am a 4th-year Computer Science 🖥 student at the University Of California at Irvine🏫.
 I am currently learning systems programming, computer graphics and AI.
 
 Contact me on [LinkedIn](www.linkedin.com/in/lakshya-shrivastava0803).
