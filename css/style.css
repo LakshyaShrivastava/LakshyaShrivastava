@@ -1,29 +1,365 @@
+/* --------------------------------------------------------------------------
+   Lakshya Shrivastava — portfolio page (GitHub Pages)
+   Phase 2: semantic layout, restrained palette, responsive, a11y-friendly
+   -------------------------------------------------------------------------- */
+
+:root {
+    --color-bg: #0c1017;
+    --color-bg-elevated: #141b26;
+    --color-border: rgba(232, 241, 249, 0.12);
+    --color-text: #e8f1f9;
+    --color-text-muted: #9aadbf;
+    --color-accent: #4fd1c5;
+    --color-accent-hover: #7fe8de;
+    --color-focus: #fbbf24;
+
+    --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    --space-xs: 0.35rem;
+    --space-sm: 0.75rem;
+    --space-md: 1.25rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: clamp(3rem, 8vw, 5rem);
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 12px 40px rgba(0, 0, 0, 0.35);
+
+    --content-max: 68rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
-    min-height: 100%;
-    background-image: linear-gradient(105deg, rgb(0, 249, 255, 100%) 39%, rgb(51, 56, 57, 100%) 96%);
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
 
 body {
     margin: 0;
     min-height: 100vh;
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    background-image:
+        radial-gradient(ellipse 120% 80% at 50% -30%, rgba(79, 209, 197, 0.14), transparent 55%),
+        radial-gradient(ellipse 70% 50% at 100% 0%, rgba(56, 189, 248, 0.06), transparent 45%);
 }
 
-h1 {
-    text-align: center;
-    font-family: sans-serif;
+.skip-link {
+    position: absolute;
+    left: var(--space-md);
+    top: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-accent);
+    color: var(--color-bg);
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    z-index: 100;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
 }
 
-p {
-    font-family: sans-serif;
+.skip-link:focus {
+    clip-path: none;
+    clip: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
 }
+
+.container {
+    width: min(100% - var(--space-lg) * 2, var(--content-max));
+    margin-inline: auto;
+}
+
+/* ----- Header ----- */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid var(--color-border);
+    background: rgba(12, 16, 23, 0.85);
+    backdrop-filter: blur(10px);
+}
+
+.header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding-block: var(--space-md);
+}
+
+.site-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--color-text);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+}
+
+.site-title:hover {
+    color: var(--color-accent-hover);
+}
+
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-lg);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.site-nav a:hover {
+    color: var(--color-text);
+}
+
+/* ----- Main sections ----- */
+
+.section {
+    padding-block: var(--space-2xl);
+}
+
+.section-alt {
+    background: rgba(20, 27, 38, 0.5);
+    border-block: 1px solid var(--color-border);
+}
+
+.hero {
+    padding-block: clamp(2.5rem, 10vw, 4.5rem);
+}
+
+.eyebrow {
+    margin: 0 0 var(--space-sm);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.hero-title {
+    margin: 0 0 var(--space-md);
+    font-size: clamp(1.75rem, 4.5vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    max-width: 20ch;
+}
+
+.hero-lead {
+    margin: 0 0 var(--space-lg);
+    max-width: 48ch;
+    color: var(--color-text-muted);
+    font-size: 1.125rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.section-title {
+    margin: 0 0 var(--space-sm);
+    font-size: clamp(1.35rem, 3vw, 1.65rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.section-intro {
+    margin: 0 0 var(--space-xl);
+    max-width: 50ch;
+    color: var(--color-text-muted);
+}
+
+/* ----- Buttons ----- */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.65rem 1.15rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    font-family: inherit;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.button-primary {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+.button-primary:hover {
+    background: var(--color-accent-hover);
+    color: var(--color-bg);
+}
+
+.button-ghost {
+    background: transparent;
+    color: var(--color-text);
+    border-color: var(--color-border);
+}
+
+.button-ghost:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent-hover);
+}
+
+/* ----- Project cards ----- */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: var(--space-lg);
+}
+
+.project-card {
+    margin: 0;
+    padding: var(--space-lg);
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.project-card-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.project-card-desc {
+    margin: 0;
+    flex: 1;
+    color: var(--color-text-muted);
+    font-size: 0.9375rem;
+}
+
+.project-card-links {
+    list-style: none;
+    margin: var(--space-sm) 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-md);
+}
+
+.project-card-links a {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ----- Contact ----- */
+
+.contact-lead {
+    margin: 0 0 var(--space-md);
+    font-size: 1.125rem;
+}
+
+.contact-lead a {
+    color: var(--color-accent-hover);
+    font-weight: 600;
+}
+
+.contact-sep {
+    color: var(--color-text-muted);
+    margin-inline: var(--space-xs);
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-lg);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-links a {
+    font-weight: 600;
+}
+
+/* ----- Footer ----- */
+
+.site-footer {
+    border-top: 1px solid var(--color-border);
+    padding-block: var(--space-lg);
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+}
+
+.footer-inner p {
+    margin: 0;
+}
+
+/* ----- Links & focus (global) ----- */
+
 a {
-    color: black;
-}
-a:hover {
-    color: blue;
+    color: var(--color-accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
 }
 
-a:focus-visible {
-    outline: 2px solid #003d5c;
+a:hover {
+    color: var(--color-accent-hover);
+}
+
+.site-footer a {
+    color: var(--color-text-muted);
+}
+
+.site-footer a:hover {
+    color: var(--color-accent-hover);
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 3px;
+}
+
+.button:focus-visible {
     outline-offset: 2px;
 }

@@ -3,12 +3,106 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Lakshya Shrivastava — Computer Science at UC Irvine. Machine learning, deep learning, and probabilistic AI.">
         <title>Lakshya Shrivastava</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <h1>Lakshya Shrivastava</h1>
-        <p>CS @ UC Irvine · ML, deep learning, and probabilistic systems. See my <a href="https://github.com/LakshyaShrivastava">GitHub profile</a> for projects and contact.</p>
-        <p><a href="https://www.linkedin.com/in/lakshya-shrivastava0803" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <a class="skip-link" href="#main-content">Skip to content</a>
+
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="site-title" href="#">Lakshya Shrivastava</a>
+                <nav class="site-nav" aria-label="Primary">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section id="about" class="hero section">
+                <div class="container">
+                    <p class="eyebrow">UC Irvine · B.S. Computer Science, 2026</p>
+                    <h1 class="hero-title">ML, deep learning &amp; probabilistic systems</h1>
+                    <p class="hero-lead">
+                        I build end-to-end ML pipelines, train and ship models, and care about evaluation and tooling.
+                        Full portfolio and pins live on my GitHub profile.
+                    </p>
+                    <p class="hero-actions">
+                        <a class="button button-primary" href="https://github.com/LakshyaShrivastava">View GitHub profile</a>
+                        <a class="button button-ghost" href="https://www.linkedin.com/in/lakshya-shrivastava0803" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </p>
+                </div>
+            </section>
+
+            <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
+                <div class="container">
+                    <h2 id="projects-heading" class="section-title">Selected projects</h2>
+                    <p class="section-intro">Highlights aligned with my pinned repositories — details and code on GitHub.</p>
+
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <h3 class="project-card-title">AQI forecasting</h3>
+                            <p class="project-card-desc">
+                                Santa Clara County daily AQI — Random Forest, Streamlit, GitHub Actions for refresh &amp; retrain, pytest CI.
+                            </p>
+                            <ul class="project-card-links">
+                                <li><a href="https://ls-aqi-predictor.streamlit.app/">Live Streamlit app</a></li>
+                                <li><a href="https://github.com/LakshyaShrivastava/AQI-Predictor-app">Repository</a></li>
+                            </ul>
+                        </article>
+
+                        <article class="project-card">
+                            <h3 class="project-card-title">OCT classification</h3>
+                            <p class="project-card-desc">
+                                Retinal OCT with DenseNet-121, PyTorch, Weights &amp; Biases sweeps, and Grad-CAM interpretability.
+                            </p>
+                            <ul class="project-card-links">
+                                <li><a href="https://github.com/LakshyaShrivastava/oct-retinal-classification">Repository</a></li>
+                            </ul>
+                        </article>
+
+                        <article class="project-card">
+                            <h3 class="project-card-title">Probabilistic inference (research)</h3>
+                            <p class="project-card-desc">
+                                C++ graphical-model core with CMake &amp; GoogleTest — undergraduate research with Prof. Bobak Pezeshki.
+                            </p>
+                            <ul class="project-card-links">
+                                <li><a href="https://github.com/LakshyaShrivastava/pygmod_C">Repository</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section" aria-labelledby="contact-heading">
+                <div class="container">
+                    <h2 id="contact-heading" class="section-title">Contact</h2>
+                    <p class="contact-lead">
+                        <a href="mailto:laksh.vastava@gmail.com">laksh.vastava@gmail.com</a>
+                        <span class="contact-sep" aria-hidden="true">·</span>
+                        Milpitas, CA
+                    </p>
+                    <ul class="contact-links">
+                        <li><a href="https://github.com/LakshyaShrivastava">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/lakshya-shrivastava0803" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p>&copy; <span id="year"></span> Lakshya Shrivastava · <a href="https://github.com/LakshyaShrivastava/LakshyaShrivastava">Site source</a></p>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>
