@@ -2,7 +2,7 @@
 
 Computer Science student at **UC Irvine** (B.S., expected **June 2026**). I focus on **machine learning**, **deep learning**, and **probabilistic AI systems** — end-to-end ML pipelines, training and fine-tuning models, and production-style tooling. I'm interested in **AI/ML engineering** and **research** roles.
 
-**Contact:** [laksh.vastava@gmail.com](mailto:laksh.vastava@gmail.com) · [LinkedIn](https://www.linkedin.com/in/lakshya-shrivastava0803) · Milpitas, CA
+**Contact:** [laksh.vastava@gmail.com](mailto:laksh.vastava@gmail.com) · [LinkedIn](https://www.linkedin.com/in/lakshya-shrivastava0803) · [Personal site](https://lakshyashrivastava.github.io/LakshyaShrivastava/) · Milpitas, CA
 
 Pinned repositories below highlight ML, systems, and tooling work — start there for code and write-ups.
 
@@ -48,8 +48,8 @@ Relevant coursework: Machine Learning, Artificial Intelligence, Computer Vision,
 
 ---
 
-### Mini-site in this repo
+### Mini-site
 
-This profile repo also contains a small static page: [`index.html`](https://github.com/LakshyaShrivastava/LakshyaShrivastava/blob/main/index.html) + [`css/style.css`](https://github.com/LakshyaShrivastava/LakshyaShrivastava/blob/main/css/style.css). To publish it with **GitHub Pages**, open **Settings → Pages**, choose **GitHub Actions** as the source, then use the workflow in [`.github/workflows/pages.yml`](.github/workflows/pages.yml) (push to `main` triggers deploy). The site URL will be `https://lakshyashrivastava.github.io/LakshyaShrivastava/`.
+**Live:** [lakshyashrivastava.github.io/LakshyaShrivastava](https://lakshyashrivastava.github.io/LakshyaShrivastava/) — minimal static page from this repo ([`index.html`](https://github.com/LakshyaShrivastava/LakshyaShrivastava/blob/main/index.html), [`css/style.css`](https://github.com/LakshyaShrivastava/LakshyaShrivastava/blob/main/css/style.css)). Deployed via **GitHub Actions** ([`.github/workflows/pages.yml`](.github/workflows/pages.yml)); pushes to `main` rebuild the site.
 
 <!-- Maintainer: example pin set — AQI-Predictor-app, oct-retinal-classification, pygmod_C, Sentiment_Classifier, ThreatSense, PintosProject / LearningSystemsProgramming -->
