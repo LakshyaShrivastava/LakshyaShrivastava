@@ -11,7 +11,7 @@ Pinned repositories below highlight ML, systems, and tooling work — start ther
 ### Featured projects
 
 - **Adaptive AQI forecasting (Santa Clara County)** — Full-stack ML: time-series features, **Random Forest** forecasting, **Streamlit** app, **GitHub Actions** for data refresh and retraining, **pytest** CI. [**Live app**](https://ls-aqi-predictor.streamlit.app/) · [**Repository**](https://github.com/LakshyaShrivastava/AQI-Predictor-app)
-- **OCT retinal disease classification** — **PyTorch** (**DenseNet-121**), hyperparameter sweeps (**Weights & Biases**), **Grad-CAM** interpretability, ~**93%** accuracy and strong macro **F1**. Developed primarily on **Kaggle**; a dedicated GitHub portfolio repo (notebook + paper) is planned — until then, ask or see resume for details.
+- **OCT retinal disease classification** — **PyTorch** (**DenseNet-121**), hyperparameter sweeps (**Weights & Biases**), **Grad-CAM** interpretability, ~**93%** accuracy and strong macro **F1**. Notebook and write-up live in [**oct-retinal-classification**](https://github.com/LakshyaShrivastava/oct-retinal-classification) (developed on **Kaggle**, reproduced here).
 - **Probabilistic inference (research)** — **C++** implementation of **pygmod** with **CMake**; undergraduate research on probabilistic graphical models and efficient inference (Prof. Bobak Pezeshki). [**Repository**](https://github.com/LakshyaShrivastava/pygmod_C)
 
 ---
@@ -52,4 +52,4 @@ Relevant coursework: Machine Learning, Artificial Intelligence, Computer Vision,
 
 This profile repo also contains a small static page: [`index.html`](https://github.com/LakshyaShrivastava/LakshyaShrivastava/blob/main/index.html) + [`css/style.css`](https://github.com/LakshyaShrivastava/LakshyaShrivastava/blob/main/css/style.css). To publish it with **GitHub Pages**, open **Settings → Pages**, choose **GitHub Actions** as the source, then use the workflow in [`.github/workflows/pages.yml`](.github/workflows/pages.yml) (push to `main` triggers deploy). The site URL will be `https://lakshyashrivastava.github.io/LakshyaShrivastava/`.
 
-<!-- Maintainer: suggested profile pins until OCT repo exists — AQI-Predictor-app, pygmod_C, Sentiment_Classifier, ThreatSense, PintosProject, LearningSystemsProgramming -->
+<!-- Maintainer: example pin set — AQI-Predictor-app, oct-retinal-classification, pygmod_C, Sentiment_Classifier, ThreatSense, PintosProject / LearningSystemsProgramming -->
